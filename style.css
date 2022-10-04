@@ -141,8 +141,6 @@ body {
     top: -150px;
 }
 
-
-/* external css */
 .para-img-1,
 .para-img-2 {
     position: relative;
@@ -169,35 +167,9 @@ body {
     padding: 50px 80px;
 }
 
-.section-light {
-    background-color: #607c46;
-    color: #666;
-}
-
 .section-dark {
     background-color: #607c46;
     color: #ddd;
-}
-
-.para-text {
-    position: absolute;
-    top: 50%;
-    width: 100%;
-    text-align: center;
-    color: #607c46;
-    font-size: 27px;
-    letter-spacing: 8px;
-    text-transform: uppercase;
-}
-
-.para-text .border {
-    background-color: #607c46;
-    color: #fff;
-    padding: 20px;
-}
-
-.para-text .border.trans {
-    background-color: transparent;
 }
 
 @media(max-width:568px) {
