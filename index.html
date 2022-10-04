@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Parallax Website</title>
+</head>
+
+<body>
+    <header id="header" class="navbar">
+        <a href="#" class="logo">M.A.S Developers</a>
+        <ul>
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Gallary</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </header>
+    <section class="para">
+        <h2 id="text" class="moto"><span>We build your</span><br>Dreams</h2>
+        <img src="Assets/sky [Converted]-01.png" id="sky" alt="sky">
+
+        <img src="Assets/cloud [Converted]4.png" id="cloud" alt="cloud">
+
+
+        <a href="#explore" id="btn">Explore</a>
+
+        <img src="Assets/buildings [Converted]2.png" id="building" alt="building">
+        <img src="Assets/ground [Converted]3.png" id="ground" alt="ground">
+    </section>
+    <div class="sec">
+        <h2>Parallax scrolling Effects</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut est facere ipsa doloribus magnam laboriosam,
+            numquam consequuntur hic. Quis obcaecati saepe, rem molestias, dolores perferendis architecto officiis
+            eveniet accusamus at, reiciendis autem laudantium voluptate fugiat soluta esse fuga ipsa? <br><br> Laborum
+            temporibus vero error! Vitae facere voluptas dolorum illo, nisi tempore saepe, eos sit maxime dolore tenetur
+            quaerat cupiditate officiis labore dolores maiores excepturi ratione Voluptas perspiciatis, modi pariatur
+            quisquam veritatis dignissimos, id adipisci enim asperiores praesentium ex non repudiandae blanditiis
+            culpa.<br><br> Reprehenderit, saepe aut. Iusto sed voluptates dignissimos! Laudantium dignissimos in aliquid
+            quidem, nesciunt mollitia, praesentium reprehenderit id provident consectetur rem soluta totam aspernatur
+            similique dolore itaque a repellat doloribus blanditiis fugit, quaerat eaque. <br><br>Maiores libero placeat
+            dolores sint optio accusantium facere, quisquam mollitia iure quidem assumenda ipsa, voluptates voluptate,
+            labore dignissimos et vel itaque at incidunt at obcaecati excepturi neque modi? Iusto ab, inventore aliquam
+            repellat laborum blanditiis unde soluta a similique libero. Assumenda, nam aliquam quo explicabo nobis
+            labore placeat fugit velit
+        </p>
+    </div>
+
+
+    <div class="para-img-1" id="explore">
+        <!-- <div class="para-text">
+            <span class="border trans">
+                <a href="#" id="btn">Explore</a>
+            </span>
+        </div> -->
+    </div>
+
+    <section class="section section-dark">
+        <h2>Section Two</h2>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, laudantium, quibusdam? Nobis, delectus,
+            commodi,
+            fugit amet tempora facere dolores nisi facilis consequatur, odio hic minima nostrum. Perferendis eos earum
+            praesentium, blanditiis sapiente labore aliquam ipsa architecto vitae. Minima soluta temporibus voluptates
+            inventore commodi cumque esse suscipit optio aliquam et, dolorem a cupiditate nihil fuga laboriosam fugiat
+            placeat dignissimos! Unde eveniet placeat quisquam blanditiis voluptatem doloremque fugiat dolor repellendus
+            ratione in.
+        </p>
+    </section>
+
+    <div class="para-img-2">
+        <!-- <div class="para-text">
+            <span class="border trans">
+                <a href="#" id="btn">Explore</a>
+            </span>
+        </div> -->
+    </div>
+
+    <section class="section section-dark">
+        <h2>Section Three</h2>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, laudantium, quibusdam? Nobis, delectus,
+            commodi,
+            fugit amet tempora facere dolores nisi facilis consequatur, odio hic minima nostrum. Perferendis eos earum
+            praesentium, blanditiis sapiente labore aliquam ipsa architecto vitae. Minima soluta temporibus voluptates
+            inventore commodi cumque esse suscipit optio aliquam et, dolorem a cupiditate nihil fuga laboriosam fugiat
+            placeat dignissimos! Unde eveniet placeat quisquam blanditiis voluptatem doloremque fugiat dolor repellendus
+            ratione in.
+        </p>
+    </section>
+
+    <div class="para-img-1">
+        <!-- <div class="para-text">
+            <span class="border">
+                <a href="#" id="btn">Explore</a>
+            </span>
+        </div> -->
+    </div>
+   
+   <script>
+        let header = document.getElementById('header');
+        let text = document.getElementById('text');
+        let btn = document.getElementById('btn');
+        let cloud = document.getElementById('cloud');
+        let sky = document.getElementById('sky');
+        let building = document.getElementById('building');
+        let ground = document.getElementById('ground');
+
+        window.addEventListener('scroll', function () {
+            let value = window.scrollY;
+
+            text.style.top = 50 + value * -1.5 + '%';
+            header.style.top = value * 0.5 + 'px';
+            btn.style.marginTop = value * -1.5 + ' px';
+            cloud.style.left = value * -5 + ' px';
+            cloud.style.top = value * -1.5 + ' px';
+            ground.style.top = value * -1.5 + ' px';
+
+        })
+    </script>
+</body>
+
+</html>
